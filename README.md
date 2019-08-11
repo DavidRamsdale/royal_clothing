@@ -1,12 +1,13 @@
-##Live Site: https://royal-live.herokuapp.com/
+## Live Site: https://royal-live.herokuapp.com/
 
 This project was created using:
--React
--Redux
--Redux Sags
--Hooks
--Firebase
--Stripe Api
+
+* React
+* Redux
+* Redux Sagas
+* Hooks
+* Firebase
+* Stripe Api
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
