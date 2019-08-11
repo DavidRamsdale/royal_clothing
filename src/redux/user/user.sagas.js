@@ -80,5 +80,5 @@ export function* userSagas() {
         call(onEmailSignInStart), 
         call(isUserAuthenticated), 
         call(onSignOutStart)
-    ]);
+        ]);
 }
