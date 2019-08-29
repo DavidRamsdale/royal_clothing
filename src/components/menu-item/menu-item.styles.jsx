@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const MenuItemContainer = styled.div`
-    height: ${({ size }) => (size ? '380px' : '240px')};
+	height: ${({ size }) => (size ? '380px' : '240px')};
 	min-width: 30%;
 	overflow: hidden;
 	flex: 1 1 auto;
@@ -11,7 +11,6 @@ export const MenuItemContainer = styled.div`
 	border: 1px solid black;
 	margin: 0 7.5px 15px;
 	overflow: hidden;
-    
 	&:hover {
 		cursor: pointer;
 		& .background-image {
@@ -33,6 +32,8 @@ export const MenuItemContainer = styled.div`
   }
 `;
 
+MenuItemContainer.displayName = 'MenuItemContainer';
+
 export const BackgroundImageContainer = styled.div`
   width: 100%;
   height: 100%;
@@ -40,6 +41,8 @@ export const BackgroundImageContainer = styled.div`
   background-position: center;
   background-image: ${({ imageUrl }) => `url(${imageUrl})`};
 `;
+
+BackgroundImageContainer.displayName = 'BackgroundImageContainer';
 
 export const ContentContainer = styled.div`
   height: 90px;
