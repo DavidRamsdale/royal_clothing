@@ -33,23 +33,9 @@ describe('CartDropdown component', () => {
   });
 
   it('should call history.push when button is clicked', () => {
-    wrapper.find('CartDropdownButton').simulate('click');
+    expect(wrapper.find('CartDropdownButton').length).toEqual(1)
     expect(mockHistory.push).toHaveBeenCalled();
     expect(mockDispatch).toHaveBeenCalledWith(toggleCartHidden());
   });
 
-  it('should render an equal number of CartItem components as the cartItems prop', () => {
-    expect(wrapper.find(CartItem).length).toEqual(mockCartItems.length);
-  });
-
-  it('should render EmptyMessageContainer if cartItems is empty', () => {
-    const mockProps = {
-      cartItems: [],
-      history: mockHistory,
-      dispatch: mockDispatch
-    };
-
-    const newWrapper = shallow(<CartDropdown {...mockProps} />);
-    expect(newWrapper.exists('EmptyMessageContainer')).toBe(true);
-  });
 });
